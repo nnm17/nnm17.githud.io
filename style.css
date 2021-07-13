@@ -1,0 +1,220 @@
+@charset "UTF-8";
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.container{
+  width:1400px;
+  margin: 0 auto;
+}
+header{
+  height:100px;
+  width: 100%;
+  background-color: rgba(32, 52, 107, 0.8);
+  color:#fff;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+.header-logo{
+  float: left;
+  line-height: 100px;
+  font-size: 25px;
+}
+.header-list{
+  float: right;
+}
+.header-list a{
+  margin: 20px 15px;
+  padding: 0 20px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: rgba(255,255,255,0.3);
+  line-height: 60px;
+  border-radius: 20px;
+}
+.header-list a:hover{
+  transition:all 0.5s;
+  background-color: rgba(255,255,255,0.5);
+}
+.box{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-attachment: fixed;
+  padding: 300px 0px 500px 0;
+}
+.bgImg{
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  animation: bgAnime 25s infinite;
+}
+.src1{
+  background-image: url(img/coffee3.jpg);
+}
+.src2{
+  background-image: url(img/espresso.jpg);
+  animation-delay: 5s;
+}
+.src3{
+  background-image: url(img/latte.jpg);
+  animation-delay: 10s;
+}
+.src4{
+  background-image: url(img/cafe.jpg);
+  animation-delay: 15s;
+}
+.src5{
+  background-image: url(img/cafe3.jpg);
+  animation-delay: 20s;
+}
+@keyframes bgAnime{
+  0%{opacity: 0;}
+  7%{opacity: 1;}
+  25%{opacity: 1;}
+  30%{opacity: 0;
+      z-index: 4;}
+  100%{opacity: 0;}
+}
+.boxString{
+  position: absolute;
+  display: inline-block;
+  font-size: 100px;
+  color: #fff;
+  padding-left: 80px;
+  letter-spacing: 10px;
+  z-index: 5;
+  font-weight: bold;
+}
+
+.menu-wrapper{
+  background: url(img/coffee.png);
+  background-size: cover;
+  color: #fff;
+}
+.menu{
+  padding: 200px 250px 600px 250px;
+}
+.menu-list{
+  font-size: 20px;
+  line-height: 2;
+}
+h2{
+  font-size: 50px;
+  text-align: center;
+  padding-bottom: 80px;
+}
+.menu-left{
+  float: left;
+}
+.menu-right{
+  float: right;
+}
+.shop-wrapper{
+  background-image: url(img/cafe2.jpg);
+  background-size: cover;
+  height: 900px;
+}
+.shop{
+  background-color: rgba(10, 16, 34, 0.3);
+  height: 350px;
+  color: #fff;
+  line-height: 2;
+  padding: 350px 0px 200px 0px;
+}
+h3{
+  font-size: 50px;
+  padding-left: 150px;
+}
+.shop-left{
+  float: left;
+  font-size: 25px;
+  padding-left: 100px;
+}
+.shop-right{
+  float: right;
+  font-size: 25px;
+  padding-right: 900px;
+
+}
+.shop-list{
+  font-size: 30px;
+  padding-top: 50px;
+}
+.fa{
+  margin:10px;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: rgba(42, 83, 218, 0.9);
+  padding: 10px;
+}
+.fa:hover{
+  transition:all 0.5s;
+  opacity: 0.6;
+}
+.online-wrapper{
+  background-image: url(img/beans.jpg);
+  height: 900px;
+  background-size: cover;
+}
+.online-store{
+  background-color: rgba(15, 26, 58, 0.2);
+  color: #fff;
+  padding: 370px 0 300px 0;
+  text-align: center;
+}
+h4{
+  font-size: 50px;
+  padding-bottom: 10px;
+}
+.online-store a{
+  display: inline-block;
+  background-color: rgba(4, 29, 99, 0.6);
+  padding: 20px 30px;
+  font-size: 20px;
+  border-radius: 20px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.online-store a:hover{
+  transition:all 0.5s;
+  background-color: rgba(4, 29, 99, 0.8);
+}
+.fas{
+  padding-left: 20px;
+}
+footer{
+  height: 100px;
+  background-color: rgba(18, 35, 80, 0.6);
+}
+h5{
+  color: #fff;
+  font-size: 25px;
+  padding-top: 25px;
+}
+
+.footer-logo p{
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+
